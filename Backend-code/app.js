@@ -6,10 +6,14 @@ const datas=require('./router/router')
 const cors = require('cors');
 const connectdatabase=require('./config/connectdatabase')
 dotenv.config({path:path.join(__dirname,'config','config.env')})
+const corsOption={
+    origin:process.env.APP_URL,
+    method:'GET,HEAD,PUT,PATCH,POST,DELETE'
+}
 // http://localhost:7000/api/v1/datas   get api
 // http://localhost:7000/api/v1/datas   post api
 
-app.use(cors());
+app.use(cors(corsOption));
 app.use(express.json());
 connectdatabase()
 app.use('/api/v1',datas)
