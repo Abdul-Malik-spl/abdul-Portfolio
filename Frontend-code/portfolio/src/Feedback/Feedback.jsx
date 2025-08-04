@@ -24,7 +24,7 @@ let feedbacksubmit=(e)=>{
   if(name&&message){
 let obj={name,message,rating:value,date,time}
 console.log(obj);
-axios.post(`${Apiurl}`,obj)
+axios.post(`${import.meta.env.VITE_API_URL}/postdata`,obj)
 .then((s)=>{console.log(s,onrefresh)
   onrefresh()
   setOpen(true)
