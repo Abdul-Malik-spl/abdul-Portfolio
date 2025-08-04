@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100vh;
+}
+.back-port{
+  background-color: rgba(128, 128, 128,.1);
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+}
+.port{
+height:100vh;
+overflow-x: hidden;
+}
+.banner{
+  /* background-image: url(./images/earthpic.png); */
+  background-image: linear-gradient(skyblue,white,skyblue);
+  height: 300px;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+
+}
+.para{
+color: Navy;
+align-content: center;
+text-align: center;
+}
+.profile-banner{
+  display: grid;
+  justify-content: center;
+align-content: center;
+}
+.profile-banner img{
+  width: 300px;
+  border-radius: 10px 20px 50px 50px;
+  
+}
+
+@media(max-width:650px){
+  .profile-banner{
+order: 1;
+  }
+  .para{
+    order: 2;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+ 
+}
+@media(max-width:380px){
+   .banner{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+   .para{
+color: Navy;
+align-content: center;
+text-align: justify;
+}
+}
+.nav-name{
+  
+  
+  font-size: medium;
+  color: navy;
+
+  /* display: flex;
+  align-items: center; */
+}
+/* .clr{
+  color: red;
+  scale: 1.5;
+} */
+.namespan{
+  display: inline-block;
+
+  align-items: center;
+  justify-content: center;
+  
+}
+.skill-section{
+  /* z-index:99; */
+
+  margin-top: 10px;
+}
+.htmlbox{
+  /* height: 200px; */
+  border-bottom: 1px solid rgb(231, 224, 224);
+
+ 
+}
+.skillbox{
+    /* height: 200px; */
+  border-bottom: 1px solid rgb(231, 224, 224);
+  
+}
+.sbox{
+  
+}
+.sbox:hover{
+  background-image: linear-gradient(skyblue,white,skyblue);
+  animation: sboxhvr 2s linear infinite;
+ /* border-radius:0px 0px 0px 0px ; */
+ border: 1px solid skyblue;
+}
+
+@keyframes sboxhvr{
+  0%{
+     border-radius:0px 0px 0px 0px ;
+  }
+  35%{
+ border-radius:0px 50px 0px 50px ;
+  background-image: linear-gradient( white,skyblue,white);
+  
+  }
+  70%{
+ border-radius:50px 0px 50px 0px ;
+  }
+  100%{
+ border-radius:0px 50px 0px 50px ;
+  }
+}
+.htmlcolor{
+  color: rgb(234, 97, 5);
+}
+.jscolor{
+  color: rgb(212, 199, 11);
+}
+.csscolor{
+  color: rgb(5, 153, 211);
+   text-shadow: 2px 2px 5px white;
+}
+.bootscolor{
+  /* color: rgb(141, 8, 141); */
+  color: rgb(121, 82, 179);
+}
+.reactcolor{
+  color: rgb(75, 190, 236);
+  text-shadow: 2px 2px 5px white;
+}
+.nodecolor{
+  color: rgb(112, 195, 34);
+}
+
+.footer-sec{
+  background-color: rgba(135, 207, 235, 0.539);
+}

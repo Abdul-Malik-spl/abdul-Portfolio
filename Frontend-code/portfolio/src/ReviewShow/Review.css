@@ -1,0 +1,30 @@
+.reviews-card{
+   
+    width: 80%;
+    margin: 0 auto;
+border-left: 5px solid skyblue;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 3px 0px 0px gray;
+      border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+    
+}
+.rvis{
+    padding: 15px;
+ width: 80%;
+  margin: 0 auto;
+    border-radius: 10px;
+     border: 1px dotted skyblue;
+     margin-top: 30px;
+   
+}
+
+.overflowboxreview{
+margin-top: 10px;
+   display: flex;
+   gap: 15px;
+   flex-direction: column;
+   overflow-y: scroll;max-height: 500px;}
