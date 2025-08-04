@@ -11,7 +11,7 @@ import nodeicon from './images/node.png'
 
 import './App.css'
 import Feedback from './Feedback/Feedback';
-import Project from './Projects/project.jsx';
+import Project from './Projects/Project';
 import Review from './ReviewShow/Review';
 import whats from './images/whats.png'
 import insta from './images/insta.png'
