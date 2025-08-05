@@ -6,10 +6,12 @@ const datas=require('./router/router')
 const cors = require('cors');
 const connectdatabase=require('./config/connectdatabase')
 dotenv.config({path:path.join(__dirname,'config','config.env')})
-const corsOption={
-    origin:process.env.APP_URL,
-    method:'GET,HEAD,PUT,PATCH,POST,DELETE'
-}
+const corsOption = {
+  origin: "https://abdul-portfolio-nine.vercel.app",
+  methods: "GET,POST"
+};
+app.use(cors(corsOption));
+
 // http://localhost:7000/api/v1/datas   get api
 // http://localhost:7000/api/v1/datas   post api
 

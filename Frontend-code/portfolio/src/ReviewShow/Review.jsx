@@ -10,7 +10,7 @@ import Snackbar from '@mui/material/Snackbar';
    console.log(refreshTrigger);
    
     useEffect(()=>{
-        axios.get(`${import.meta.env.VITE_API_URL}/getdata`)
+        axios.get(`${import.meta.env.VITE_API_URL}/v1/getdata`)
         .then((s)=>{
           setReviews(s.data.data)
         
