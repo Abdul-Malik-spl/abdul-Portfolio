@@ -19,6 +19,6 @@ app.use(cors(corsOption));
 app.use(express.json());
 connectdatabase()
 app.use('/api/v1',datas)
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT||7000,()=>{
     console.log("server start successfully");
 })
